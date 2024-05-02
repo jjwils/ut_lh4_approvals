@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'info.solidsoft.pitest' version '1.15.0'
 }
 
 group = 'org.example'
@@ -16,4 +17,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+pitest {
+    junit5PluginVersion = '1.0.0'    //or 0.15 for PIT <1.9.0
+    targetClasses = ['train.the.trainer.*']
+    targetTests = ['train.the.trainer.*']
+    mutators = ['ALL']
 }

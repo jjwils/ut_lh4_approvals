@@ -4,17 +4,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FizzBuzzTest {
+class FizzBuzzShould {
 
     @Test
-    void fizzBuzz() {
+    void return_all_the_correct_things() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals("FizzBuzz", fizzBuzz.fizzBuzz(15));
-        assertEquals("Fizz", fizzBuzz.fizzBuzz(3));
-        assertEquals("Buzz", fizzBuzz.fizzBuzz(5));
+        assertEquals("FizzBuzz", fizzBuzz.convert(15));
+        assertEquals("Fizz", fizzBuzz.convert(3));
+        assertEquals("Fizz", fizzBuzz.convert(33));
 
-        assertEquals("1", fizzBuzz.fizzBuzz(1));
 
+        assertEquals("Buzz", fizzBuzz.convert(5));
+
+        assertEquals("1", fizzBuzz.convert(1));
     }
-
 }
