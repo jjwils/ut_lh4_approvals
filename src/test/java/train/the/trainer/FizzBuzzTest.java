@@ -28,9 +28,23 @@ class FizzBuzzTest {
     }
 
     @Test
+    void return_fizz_given_6() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.convert(6);
+        assertEquals("Fizz", actual);
+    }
+
+    @Test
     void return_buzz_given_5() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String actual = fizzBuzz.convert(5);
+        assertEquals("Buzz", actual);
+    }
+
+    @Test
+    void return_buzz_given_6() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.convert(10);
         assertEquals("Buzz", actual);
     }
 
@@ -39,6 +53,13 @@ class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String actual = fizzBuzz.convert(15);
         assertEquals("FizzBuzz", fizzBuzz.convert(15));
+    }
+
+    @Test
+    void return_fizzbuzz_given_30() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.convert(30);
+        assertEquals("FizzBuzz", fizzBuzz.convert(30));
     }
 
 }
