@@ -38,7 +38,7 @@ class FizzBuzzTest {
     void return_fizzbuzz_given_15() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String actual = fizzBuzz.convert(15);
-        assertEquals("Buzz", fizzBuzz.convert(5));
+        assertEquals("FizzBuzz", fizzBuzz.convert(15));
     }
 
 }
