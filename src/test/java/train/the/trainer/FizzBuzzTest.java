@@ -42,7 +42,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    void return_buzz_given_6() {
+    void return_buzz_given_10() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String actual = fizzBuzz.convert(10);
         assertEquals("Buzz", actual);
