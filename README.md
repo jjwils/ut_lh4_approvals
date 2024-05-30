@@ -1,1 +1,1 @@
-# ut_lh2_mutation_testing_kata
+# ut_lh3_hexagonal_architecture_kata
