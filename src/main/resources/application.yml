@@ -1,0 +1,3 @@
+serviceClients:
+  numbers:
+    baseUrl: "http://localhost:9000"
