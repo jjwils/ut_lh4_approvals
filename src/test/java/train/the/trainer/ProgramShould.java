@@ -3,6 +3,7 @@ package train.the.trainer;
 import org.junit.jupiter.api.Test;
 
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ProgramShould {
@@ -14,8 +15,8 @@ public class ProgramShould {
         Printer printer = new Printer();
         Program program = new Program();
 
-        program.print();
+        program.print("1");
 
-        assertTrue(printer.printed());
+        assertEquals("1", printer.printed());
     }
 }
