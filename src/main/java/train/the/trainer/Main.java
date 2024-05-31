@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         Program program = new Program(new Printer());
-        program.print("1");
+        program.printNumbers(2);
     }
 }
