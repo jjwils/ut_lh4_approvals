@@ -12,7 +12,7 @@ public class ProgramShould {
     @Test
     void print(){
 
-        Printer printer = new Printer();
+        TestDoublePrinter printer = new TestDoublePrinter();
         Program program = new Program(printer);
 
         program.print("1");
