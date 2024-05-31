@@ -2,15 +2,15 @@ package train.the.trainer;
 
 public class TestDoublePrinter implements Printer {
 
-    private String printed = "";
-
-    public String printed() {
-        return printed;
-    }
+    private int count = 0;
 
     @Override
     public void print(String output) {
-        printed = output;
+        count++;
 
+    }
+
+    public int count() {
+        return count;
     }
 }
