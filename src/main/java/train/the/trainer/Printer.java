@@ -1,15 +1,15 @@
 package train.the.trainer;
 
 public class Printer {
+    private int count = 0;
 
-    private String printed = "";
-
-    public String printed() {
-        return printed;
-    }
 
     public void print(String output) {
-        printed = output;
+        count++;
 
+    }
+
+    public int count() {
+        return count;
     }
 }

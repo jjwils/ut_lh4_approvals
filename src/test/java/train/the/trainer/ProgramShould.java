@@ -10,13 +10,13 @@ public class ProgramShould {
 
 
     @Test
-    void print(){
+    void print_numbers(){
 
         Printer printer = new Printer();
         Program program = new Program();
 
-        program.print("1");
+        program.printNumbers(2);
 
-        assertEquals("1", printer.printed());
+        assertEquals(2, printer.count());
     }
 }
