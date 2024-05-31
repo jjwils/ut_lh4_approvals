@@ -1,7 +1,11 @@
 package train.the.trainer;
 
 public class Program {
-    private Printer printer = new Printer();
+    private final Printer printer;
+
+    public Program(Printer printer) {
+        this.printer = printer;
+    }
 
     public void print() {
         printer.print();

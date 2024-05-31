@@ -12,7 +12,7 @@ public class ProgramShould {
     void print(){
 
         Printer printer = new Printer();
-        Program program = new Program();
+        Program program = new Program(printer);
 
         program.print();
 
