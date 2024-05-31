@@ -2,14 +2,14 @@ package train.the.trainer;
 
 public class Printer {
 
-    private boolean printed = false;
+    private String printed = "";
 
-    public boolean printed() {
+    public String printed() {
         return printed;
     }
 
-    public void print() {
-        printed = true;
+    public void print(String output) {
+        printed = output;
 
     }
 }

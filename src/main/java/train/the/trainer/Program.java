@@ -7,7 +7,7 @@ public class Program {
         this.printer = printer;
     }
 
-    public void print() {
-        printer.print();
+    public void print(String output) {
+        printer.print(output);
     }
 }
