@@ -12,11 +12,11 @@ public class ProgramShould {
     @Test
     void print_numbers(){
 
-        TestDoublePrinter printer = new TestDoublePrinter();
-        Program program = new Program(printer);
+        TestDoublePrinter testDoublePrinter = new TestDoublePrinter();
+        Program program = new Program(testDoublePrinter);
 
         program.printNumbers(2);
 
-        assertEquals(2, printer.count());
+        assertEquals(2, testDoublePrinter.count());
     }
 }
