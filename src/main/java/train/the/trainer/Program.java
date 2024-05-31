@@ -8,6 +8,9 @@ public class Program {
     }
 
     public void printNumbers(int amountToPrint) {
-        printer.print("x");
+        for (int i = 1; i <= amountToPrint; i++) {
+            printer.print("x");
+        }
+
     }
 }
