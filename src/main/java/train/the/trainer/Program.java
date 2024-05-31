@@ -7,7 +7,10 @@ public class Program {
         this.printer = printer;
     }
 
-    public void print(String output) {
-        printer.print(output);
+    public void printNumbers(int amountToPrint) {
+        for (int i = 1; i <= amountToPrint; i++) {
+            printer.print("x");
+        }
+
     }
 }
