@@ -1,11 +1,10 @@
 package train.the.trainer.domain;
 
 import org.junit.jupiter.api.Test;
-import train.the.trainer.domain.FizzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FizzBuzzTest {
+class FizzBuzzShould {
 
     @Test
     void return_1_given_1() {
@@ -52,14 +51,12 @@ class FizzBuzzTest {
     @Test
     void return_fizzbuzz_given_15() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String actual = fizzBuzz.convert(15);
         assertEquals("FizzBuzz", fizzBuzz.convert(15));
     }
 
     @Test
     void return_fizzbuzz_given_30() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String actual = fizzBuzz.convert(30);
         assertEquals("FizzBuzz", fizzBuzz.convert(30));
     }
 
