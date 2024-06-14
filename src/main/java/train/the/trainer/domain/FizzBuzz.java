@@ -1,4 +1,4 @@
-package train.the.trainer;
+package train.the.trainer.domain;
 
 public class FizzBuzz {
     public String convert(int number) {

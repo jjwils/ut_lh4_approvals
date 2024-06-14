@@ -1,6 +1,7 @@
-package train.the.trainer;
+package train.the.trainer.domain;
 
 import org.junit.jupiter.api.Test;
+import train.the.trainer.domain.FizzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -14,7 +14,6 @@ build/
 *.iws
 *.iml
 *.ipr
-out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
@@ -94,7 +93,6 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -199,7 +197,6 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
