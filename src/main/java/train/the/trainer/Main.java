@@ -20,6 +20,9 @@ public class Main {
             if (i % 5 == 0 || String.valueOf(i).contains("5")) {
                 result1.append("Buzz");
             }
+            if (i > 100 && i  % 15 == 0) {
+                result1.append("FizzBuzz");
+            }
 
             String result = result1.toString();
             output = result.isEmpty() ? i : result;

@@ -3,3 +3,5 @@
 [3] => Fizz 
 [5] => Buzz 
 [53] => FizzBuzz 
+[15] => FizzBuzz 
+[150] => FizzBuzzFizzBuzz 
