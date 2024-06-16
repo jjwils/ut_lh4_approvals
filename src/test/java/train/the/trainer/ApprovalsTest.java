@@ -4,6 +4,10 @@ import org.approvaltests.Approvals;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 public class ApprovalsTest {
 
     @Test
@@ -11,12 +15,18 @@ public class ApprovalsTest {
 
         int number = 1;
        // Approvals.verify(fizzBuzzWith(number));
-        CombinationApprovals.verifyAllCombinations(this::fizzBuzzWith, new Integer[] {number, 2, 3, 5, 53, 15, 150});
+        CombinationApprovals.verifyAllCombinations(Main::fizzBuzzPlus, new Integer[] {number, 2, 3, 5, 53, 15, 150}, new Integer[] {number, 2, 3, 5, 53, 15, 150});
     }
 
-    private String fizzBuzzWith(Integer number) {
-        return Main.fizzBuzzPlus(number, number).trim();
+    @Test
+    public void FizzBuzz() {
+
+        ByteArrayOutputStream fakeoutput = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(fakeoutput));
+
+        Main.main();
+        String output = fakeoutput.toString();
+
+        Approvals.verify(output);
     }
-
-
 }
