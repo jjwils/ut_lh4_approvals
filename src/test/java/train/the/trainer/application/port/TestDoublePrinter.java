@@ -1,4 +1,4 @@
-package train.the.trainer.domain.application.port;
+package train.the.trainer.application.port;
 
 import train.the.trainer.application.port.Printer;
 
