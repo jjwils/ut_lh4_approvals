@@ -1,40 +1,31 @@
 # ut_lh4_approvals_approvals_testing_kata
 
-Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+Hi and welcome to team Cancelling.com As you know, we are a small OTA with some prime locations in a prominent city.  
+Our unique selling point is that we drop the Quality Rating of our hotels as they approach their sell by date.
 
-Sample output:
+We have a system in place that updates our inventory for us. 
+It was developed by a no-nonsense type named Leeroy, who has moved on to new adventures. 
 
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-16
-17
-Fizz
-19
-Buzz
-... etc up to 100
+Your task is to add the new feature to our system so that we can begin selling a new Hotel. First an introduction to our system:
 
+All hotels have a SellIn value which denotes the number of days we have to sell the hotel.
+All hotels have a Quality value which denotes quality rating of the hotel.
+At the end of each day our system lowers both values for every hotel.
 
-New PM requirement incoming ----
+Pretty simple, right? Well this is where it gets interesting:
 
-Write a program that prints the numbers from 1 to 100, but...
+Once the sell in date has passed, Quality degrades twice as fast
+The Quality of an hotel is never negative
+Hotel "Eden" actually increases in Quality the older it gets
+The Quality of an hotel is never more than 50
+"NH Leidseplein", being a legendary hotel, never has to be sold or decreases in Quality
+"Room Mate Aitana", like aged Eden, increases in Quality as its SellIn value approaches;
+Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but
+Quality drops to 0 after the sellIn date passes
 
-numbers that are exact multiples of 3, or that contain 3, must print a string containing "Fizz"
-For example 9 -> "...Fizz..."
-For example 31 -> "...Fizz..."
+We have recently signed a new Hotel "Rho Hotel". This requires an update to our system:
 
-numbers that are exact multiples of 5, or that contain 5, must print a string containing "Buzz"
-For example 10 -> "...Buzz..."
-For example 52 -> "...Buzz..."
+"Rho Hotel" degrades in Quality twice as fast as normal hotel
+Feel free to make any changes to the UpdateQuality method and add any new code as long as everything still works correctly. However, do not alter the Hotel class or Hotels property as those belong to the goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code ownership (you can make the UpdateQuality method and Hotels property static if you like, we'll cover for you).
+
+Just for clarification, a Hotel can never have its Quality increase above 50, however "NH Leidseplein" is a legendary hotel and as such its Quality is 80 and it never alters.
