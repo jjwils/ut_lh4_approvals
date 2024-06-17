@@ -1,7 +1,8 @@
 package train.the.trainer.domain;
 
-public class FizzBuzz {
-    public String convert(int number) {
+   public class FizzBuzz {
+
+       public String convert(int number) {
         if (number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
         } else if (number % 3 == 0) {
@@ -12,4 +13,5 @@ public class FizzBuzz {
             return String.valueOf(number);
         }
     }
+
 }
