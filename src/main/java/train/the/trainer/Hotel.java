@@ -4,19 +4,20 @@ public class Hotel {
 
     public String name;
 
-    public int sellIn;
+    public int sellOutIn;
 
-    public int qualityRating;
+    public int price;
 
-    public Hotel(String name, int sellIn, int qualityRating) {
+
+    public Hotel(String name, int sellOutIn, int price) {
         this.name = name;
-        this.sellIn = sellIn;
-        this.qualityRating = qualityRating;
+        this.sellOutIn = sellOutIn;
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.qualityRating;
+        return this.name + ", " + this.sellOutIn + ", " + this.price;
     }
 }
 

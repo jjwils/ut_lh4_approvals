@@ -19,7 +19,7 @@ public class Main {
                     // this hotel does not work properly yet
                     new Hotel("Rho Hotel", 3, 6) };
 
-            GildedRose app = new GildedRose(hotels);
+            FookingDotCom app = new FookingDotCom(hotels);
 
             for (int i = 0; i < 31; i++) {
                 System.out.println("-------- day " + i + " --------");
