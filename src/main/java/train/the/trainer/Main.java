@@ -23,7 +23,7 @@ public class Main {
 
             for (int i = 0; i < 31; i++) {
                 System.out.println("-------- day " + i + " --------");
-                System.out.println("name, must sell in, quality rating");
+                System.out.println("name, must sell in days, price");
                 for (int j = 0; j < hotels.length; j++) {
                     System.out.println(hotels[j]);
                 }
