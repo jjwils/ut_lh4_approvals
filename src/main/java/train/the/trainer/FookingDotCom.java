@@ -8,7 +8,7 @@ public class FookingDotCom {
         this.hotels = hotels;
     }
 
-    public void updateQuality() {
+    public void update() {
         for (int i = 0; i < hotels.length; i++) {
             if (!hotels[i].name.equals("Eden")
                     && !hotels[i].name.equals("Room Mate Aitana")) {
