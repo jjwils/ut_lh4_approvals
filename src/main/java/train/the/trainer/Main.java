@@ -28,7 +28,7 @@ public class Main {
                     System.out.println(hotels[j]);
                 }
                 System.out.println("");
-                app.updateQuality();
+                app.update();
             }
         }
     }
