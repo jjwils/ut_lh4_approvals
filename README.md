@@ -63,4 +63,11 @@ For example 52 -> "...Buzz..."
         
     }
 ```
-
+6.  Run the test.  You should be presented with a diff dialog between two files, one called `...received.txt` and once called `approved.txt`
+7.  What do you notice about the contents of both files?
+8. Accept the changes on the left so both files are now identical to `recieved.txt` and close the diff window
+9. Run the test again.  What do you notice about the test now?
+10. Run all the tests in the test directory with coverage.  What has changed in the coverage metrics compared to earlier?
+10. Find the `...approved.txt` file in the project folder and delete it.
+11. Run the test again.  What do you notice?
+12. Run the approvals test repeatedly to iteratively change the production code until the program output matches the specification.
