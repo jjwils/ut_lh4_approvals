@@ -18,7 +18,7 @@ class FizzBuzzShould  {
             "15, 'FizzBuzz'",
             "30, 'FizzBuzz'"
     })
-    void testFizzBuzz(int input, String expectedOutput) {
+    void convert_correctly(int input, String expectedOutput) {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(expectedOutput, fizzBuzz.convert(input));
     }
