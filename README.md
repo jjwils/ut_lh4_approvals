@@ -53,7 +53,7 @@ For example 52 -> "...Buzz..."
 
         //arrange
         ByteArrayOutputStream fakeOutput = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(fakeoutput));
+        System.setOut(new PrintStream(fakeOutput));
 
         //act
         Main.main();
