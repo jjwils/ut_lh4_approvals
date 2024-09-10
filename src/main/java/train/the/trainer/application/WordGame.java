@@ -2,10 +2,10 @@ package train.the.trainer.application;
 
 import train.the.trainer.application.port.Printer;
 
-public class WordGameService {
+public class WordGame {
     private final Printer printer;
 
-    public WordGameService(Printer printer) {
+    public WordGame(Printer printer) {
         this.printer = printer;
     }
 
