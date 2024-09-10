@@ -1,4 +1,4 @@
-# ut_lh4_approvals_approvals_testing_kata
+# Learning Hour 4: Approvals Testing - Testing Behaviour not Implementation
 
 Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
@@ -38,3 +38,11 @@ For example 31 -> "...Fizz..."
 numbers that are exact multiples of 5, or that contain 5, must print a string containing "Buzz"
 For example 10 -> "...Buzz..."
 For example 52 -> "...Buzz..."
+
+## Step 1
+
+1.  Run all the tests in the test directory.  Everything should be green and passing.
+2.  Now run Main.  Is the program working correctly?  If not, why not?
+3.  Run all the tests again this time with coverage.  What do you notice?
+4.  Now move onto branch step_2
+
