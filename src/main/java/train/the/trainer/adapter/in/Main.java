@@ -8,6 +8,6 @@ public class Main {
     public static void main(String[] args) {
 
         WordGame wordGame = new WordGame(new ConsolePrinter());
-        wordGame.printNumbers(100);
+        wordGame.printNumbers(2);
     }
 }
