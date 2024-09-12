@@ -32,7 +32,7 @@ Buzz
 ## Start here
 
 1.  Run all the tests in the test directory.  Everything should be green and passing.
-2.  Now run Main.  Is the program working correctly?  If not, why not?
+2.  Now run Main.  Is the program working correctly as per the Spec above?  If not, why not?
 3.  Run all the tests again this time with coverage.  What do you notice?
 4.  Let's create an acceptance test.  Add the following to the dependencies section in build.gradle
 ```testImplementation("com.approvaltests:approvaltests:24.2.0")```
