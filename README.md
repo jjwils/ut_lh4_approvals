@@ -29,7 +29,7 @@ Buzz
 ... etc up to 100
 
 
-## Step 1
+## Start here
 
 1.  Run all the tests in the test directory.  Everything should be green and passing.
 2.  Now run Main.  Is the program working correctly?  If not, why not?
