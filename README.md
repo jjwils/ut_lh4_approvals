@@ -34,7 +34,7 @@ Buzz
 1.  Run all the tests in the test directory.  Everything should be green and passing.
 2.  Now run Main.  Is the program working correctly as per the Spec above?  If not, why not?
 3.  Run all the tests again this time with coverage.  What do you notice?
-4.  Let's create new test thats going to help us incrementally move towards a solution that has the behviour as described in the spec, aka BDD.  Add the following to the dependencies section in build.gradle
+4.  Let's create new test thats going to help us incrementally move towards a program that has the behaviour as described in the spec, aka BDD.  Add the following to the dependencies section in build.gradle
 ```testImplementation("com.approvaltests:approvaltests:24.2.0")```
 5.  Add the following test to WordGameShould 
 ```java
