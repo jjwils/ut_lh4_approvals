@@ -5,7 +5,7 @@ import train.the.trainer.adapter.out.ConsolePrinter;
 
 public class Main {
 
-    public static void main(String[]... args) {
+    public static void main(String... args) {
 
         WordGame wordGame = new WordGame(new ConsolePrinter());
         wordGame.printNumbers(2);
