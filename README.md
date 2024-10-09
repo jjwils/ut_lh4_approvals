@@ -1,5 +1,6 @@
-# ut_lh4_approvals_approvals_testing_kata
+# Learning Hour 4: Approvals Testing - Testing Behaviour not Implementation
 
+## Spec
 Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
 Sample output:
@@ -27,6 +28,7 @@ Buzz
 ... etc up to 100
 
 
+### Continue here
 New PM requirement incoming ----
 
 Write a program that prints the numbers from 1 to 100, but...
@@ -38,3 +40,5 @@ For example 31 -> "...Fizz..."
 numbers that are exact multiples of 5, or that contain 5, must print a string containing "Buzz"
 For example 10 -> "...Buzz..."
 For example 52 -> "...Buzz..."
+
+Use approvals testing to change your program complete the new requirement above.
