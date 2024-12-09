@@ -1,6 +1,7 @@
-package train.the.trainer.adapter.out;
+package train.the.trainer.adapters.out;
 
-import train.the.trainer.application.port.Printer;
+
+import train.the.trainer.application.ports.out.Printer;
 
 public class ConsolePrinter implements Printer {
     @Override
