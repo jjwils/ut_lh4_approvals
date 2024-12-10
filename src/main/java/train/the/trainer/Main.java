@@ -12,7 +12,7 @@ public class Main {
     public static final Product APPLE = new Product("Apple", new BigDecimal("0.99"));
     public static final int END_EXCLUSIVE = 2*1;
 
-    public static void main(String[]... args) {
+    public static void main(String... args) {
         Basket basket;
         basket = new Basket();
         basket.items.add(APPLE);
@@ -35,7 +35,7 @@ public class Main {
         }
 
         public void remove(String itemName) {
-            items.removeIf(product -> product.itemName().equals(itemName));
+          //TODO
         }
 
     }
