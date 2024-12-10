@@ -23,38 +23,28 @@ Total: 1.48
 ```
 
 
-## Step 1
+## Step 2
 
-## Start here
+### Continue here
 
-1.  Run all the tests in the ````test```` directory.  Everything should be green and passing.
-2.  Now run ```Main```.  Is the program output matching the spec above when printing two copies of the receipt?  If not, why not?
-3.  Run all the tests again this time with coverage.  What do you notice?  In particular with respect to the Hexagonal Architecture package structure.
-4.  Let's iterate towards a complete solution by creating an automated acceptance test.  Add the following to the dependencies section in build.gradle
-    ```testImplementation("com.approvaltests:approvaltests:24.9.0")```
-5.  Add the following test in a new test class (give it an appropriate name) in the ```adapters.in``` package in the ```test``` directory:
-```java
-    @Test
-    void print_two_copies_of_receipt() {
+1. Use your new knowledge of outside-in approvals testing to get 100% coverage of the existing codebase
+2. Perform safe Refactoring using your approvals test regularly for feedback (you should be able to use almost entirely IDE automated refactorings/yellow light bulbs etc) to tidy the complete mess that is the codebase.
+>Remember the defintion of a refactoring is a change to the internal structure of a program that does not change its
+observable behaviour.
+>Note the code as it stands is currently in production and therefore "correct".
+3. Change the code to implement the updated spec below.  You could do this by putting your new expectation in the approved file, or working incrementally towards the soltuion like in step_1
 
-        //arrange
-        ByteArrayOutputStream fakeOutput = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(fakeOutput));
-
-        //act
-        Main.main();
-        
-        //assert
-        Approvals.verify(fakeOutput.toString());
-        
-    }
+Sample output one apple, one orange:
 ```
-6.  Run the test.  You should be presented with a diff dialog between two files, one called `...received.txt` and once called `approved.txt`
-7.  What do you notice about the contents of both files?
-8. Accept the changes on the left so both files are now identical to `recieved.txt` and close the diff window
-9. Run the test again.  What do you notice about the test result now?  Is it failing or passing?
-10. Run all the tests in the test directory with coverage.  What has changed in the coverage metrics compared to earlier?
-10. Find the `...approved.txt` file in the project folder and delete it.
-11. Run the test again.  What do you notice?
-12. Run the approvals test repeatedly to iteratively change the production code until the program output matches the specification.
-
+Apple 0.99  
+Orange 0.49  
+-----------  
+Total: 1.48
+```
+Sample output two apples, one orange:
+```
+Apple 0.99  x2 
+Orange 0.49 x1 
+----------- 
+Total: 2.47
+```
