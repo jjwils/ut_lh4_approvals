@@ -1,4 +1,4 @@
-package train.the.trainer.application.port;
+package train.the.trainer.application.ports.out;
 
 public class TestDoublePrinter implements Printer {
 

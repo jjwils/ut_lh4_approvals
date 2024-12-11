@@ -1,7 +1,7 @@
-package train.the.trainer.adapter.in;
+package train.the.trainer.adapters.in;
 
 import train.the.trainer.application.WordGame;
-import train.the.trainer.adapter.out.ConsolePrinter;
+import train.the.trainer.adapters.out.ConsolePrinter;
 
 public class Main {
 

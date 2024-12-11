@@ -1,6 +1,6 @@
 package train.the.trainer.application;
 
-import train.the.trainer.application.port.Printer;
+import train.the.trainer.application.ports.out.Printer;
 
 public class WordGame {
     private final Printer printer;

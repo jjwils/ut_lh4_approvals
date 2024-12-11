@@ -35,7 +35,7 @@ Buzz
 2.  Now run Main.  Is the program working correctly?  If not, why not?
 3.  Run all the tests again this time with coverage.  What do you notice?
 4.  Let's create an acceptance test.  Add the following to the dependencies section in build.gradle
-```testImplementation("com.approvaltests:approvaltests:24.2.0")```
+```testImplementation("com.approvaltests:approvaltests:24.9.0")```
 5.  Add the following test to WordGameShould 
 ```java
     @Test

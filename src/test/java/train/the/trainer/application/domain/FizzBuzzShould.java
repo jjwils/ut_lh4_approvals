@@ -1,7 +1,8 @@
-package train.the.trainer.domain;
+package train.the.trainer.application.domain;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import train.the.trainer.application.domain.FizzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 

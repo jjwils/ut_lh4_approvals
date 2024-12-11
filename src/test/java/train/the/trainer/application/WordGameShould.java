@@ -1,7 +1,7 @@
 package train.the.trainer.application;
 
 import org.junit.jupiter.api.Test;
-import train.the.trainer.application.port.TestDoublePrinter;
+import train.the.trainer.application.ports.out.TestDoublePrinter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
