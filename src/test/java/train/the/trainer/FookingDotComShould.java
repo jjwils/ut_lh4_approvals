@@ -25,15 +25,18 @@ public class FookingDotComShould {
     @Test
     void update_the_movenpick_hotel() {
 
-        Hotel[] hotels = new Hotel[] {new Hotel("MovenPick", 10, 20)};
+        Hotel movenPick = new Hotel("MovenPick", 10, 20);
+        verifyNextDaysPrice(movenPick);
+
+
+    }
+
+    private static void verifyNextDaysPrice(Hotel movenPick) {
+        Hotel[] hotels = new Hotel[] {movenPick};
         FookingDotCom app = new FookingDotCom(hotels);
 
         app.update();
 
-        assertEquals("MovenPick", hotels[0].name);
-        assertEquals(9, hotels[0].sellOutIn);
-        assertEquals(19, hotels[0].price);
-
-
+        Approvals.verify(hotels[0]);
     }
 }
