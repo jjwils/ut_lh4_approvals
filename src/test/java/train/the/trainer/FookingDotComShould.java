@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class FookingDotComShould {
 
     @Test
@@ -22,22 +24,27 @@ public class FookingDotComShould {
     }
 
     @Test
-    public void update_the_eden_hotel() {
+     void update_the_movenpick_hotel() {
 
-        Hotel[] hotels = new Hotel[] { new Hotel("Eden", 10, 1) };
+        Hotel movenPick = new Hotel("MovenPick", 10, 20);
+        Hotel[] hotels = new Hotel[] {movenPick};
         FookingDotCom app = new FookingDotCom(hotels);
+
         app.update();
 
-        Approvals.verify(hotels[0]);
+        assertEquals("MovenPick", hotels[0].name);
+        assertEquals(9, hotels[0].sellOutIn);
+        assertEquals(19, hotels[0].price);
+
 
     }
 
     @Test
-    public void update_the_combinbations() {
+     void update_movenpick_and_room_mate_aitana_hotels() {
 
-        String hotelName = "Eden";
+        String hotelName = "MovenPick";
         int sellOutIn = 10;
-        int price = 1;
+        int price = 20;
 
         doUpdate(hotelName, sellOutIn, price);
 
