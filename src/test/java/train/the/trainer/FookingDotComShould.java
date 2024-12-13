@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -35,13 +36,30 @@ public class FookingDotComShould {
     
     @Test
     void update_the_eden_hotel() {
-        var expected = """
-            Eden, 1, 1
-            """;
         Hotel eden = new Hotel("Eden", 2, 0);
-        verifyNextDaysPrice(eden, expected);
+        Hotel misterHighland = new Hotel("Mister Highland", 5, 7);
+
+
+        Hotel[] hotels = new Hotel[] {eden, misterHighland};
+        Approvals.verifyAll("Hotels", Arrays.asList(hotels), h->printHeader(h) + updatePrice(h));
     }
-    
+
+    private static String updatePrice(Hotel eden) {
+        Hotel[] hotels = new Hotel[] {eden};
+        FookingDotCom app = new FookingDotCom(hotels);
+
+        app.update();
+        return hotels[0].toString();
+    }
+
+    private String printHeader(Hotel h) {
+        return """
+                **********************
+                Hotel: %s
+                **********************
+                """.formatted(h);
+    }
+
     @Test
     void update_the_mister_highland_hotel() {
         Hotel misterHighland = new Hotel("Mister Highland", 5, 7);
