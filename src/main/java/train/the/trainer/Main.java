@@ -33,11 +33,7 @@ public class Main {
         public Basket() {
 
         }
-
-        public void remove(String itemName) {
-          //TODO
-        }
-
+        
     }
 
     public static final class Product {
@@ -57,28 +53,7 @@ public class Main {
             return itemPrice;
         }
 
-        @Override
-        public boolean equals(Object obj) {
-            if (obj == this) return true;
-            if (obj == null || obj.getClass() != this.getClass()) return false;
-            var that = (Product) obj;
-            return Objects.equals(this.itemName, that.itemName) &&
-                    Objects.equals(this.itemPrice, that.itemPrice);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(itemName, itemPrice);
-        }
-
-        @Override
-        public String toString() {
-            return "Product[" +
-                    "itemName=" + itemName + ", " +
-                    "itemPrice=" + itemPrice + ']';
-        }
-
-        }
+    }
 
 }
 
