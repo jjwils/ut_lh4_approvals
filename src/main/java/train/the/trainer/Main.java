@@ -8,16 +8,8 @@ public class Main {
             System.out.println("OMGHAI!");
 
             Hotel[] hotels = new Hotel[] {
-                    new Hotel("MovenPick", 10, 20),
-                    new Hotel("Eden", 2, 0),
-                    new Hotel("Mister Highland", 5, 7),
-                    new Hotel("NH Leidseplein", 0, 80),
-                    new Hotel("NH Leidseplein", -1, 80),
-                    new Hotel("Room Mate Aitana", 15, 20),
-                    new Hotel("Room Mate Aitana", 10, 49),
-                    new Hotel("Room Mate Aitana", 5, 49),
-                    // this hotel does not work properly yet
-                    new Hotel("Rho Hotel", 3, 6) };
+                    // this new hotel does not work properly yet
+                    new Hotel("Rho Hotel", 20, 50) };
 
             FookingDotCom app = new FookingDotCom(hotels);
 
