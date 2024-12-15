@@ -27,7 +27,8 @@ Total: 1.48
 
 ### Continue here
 
-1. Use your new knowledge of outside-in approvals testing to get 100% coverage of the existing codebase
+1. Run the tests.  Oh, nft...
+2. Use your new knowledge of outside-in approvals testing to get 100% coverage of the existing codebase
 2. Perform safe Refactoring using your approvals test regularly for feedback (you should be able to use almost entirely IDE automated refactorings/yellow light bulbs etc) to tidy the complete mess that is the codebase.
 >Remember the definition of a refactoring is a change to the internal structure of a program that does not change its
 observable behaviour.
